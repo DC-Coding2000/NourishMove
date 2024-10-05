@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personalised Workouts - Fitness</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"/>
+      <style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f9f9f9;
+    scroll-behavior: smooth;
+  }
+  header {
+    background-color: #264653;
+    padding: 15px 20px;
+    text-align: center;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  header h1 {
+    font-size: 2em;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 20px 0 0 0;
+  }
+  nav ul li {
+    margin: 0 20px;
+  }
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+  }
+  nav ul li a:hover {
+    color: #e9c46a;
+  }
+  /* MuscleGainW-section */
+  li::marker {
+    font-size: 1.4rem;
+    top: 5px;
+}
+  .WeightLossW-section {
+    padding: 60px 20px;
+    text-align: left;
+  }
+  .WeightLossW-section h2 {
+    font-size: 3.0em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+    text-align: left;
+  }
+  .WeightLossW-section h3 {
+    font-size: 2.0em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+  }
+  .WeightLossW-section h4 {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+  }
+  .WeightLossW-section p {
+    font-size: 1.3em;
+    margin-bottom: 40px;
+    color: #555;
+    text-align: center;
+    max-width: 800px;
+  }
+  /* WeightLossW1-section */
+  li::marker {
+    font-size: 1.4rem;
+    top: 5px;
+}
+  .WeightLossW1-section {
+    padding: 60px 20px;
+    text-align: left;
+  }
+  .WeightLossW1-section h2 {
+    font-size: 3.0em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+    text-align: left;
+  }
+  .WeightLossW1-section h3 {
+    font-size: 2.0em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+  }
+  .WeightLossW1-section h4 {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+  }
+  .WeightLossW1-section p {
+    font-size: 1.3em;
+    margin-bottom: 40px;
+    color: #555;
+    text-align: center;
+    max-width: 800px;
+  }
+  /* WeightLossW2-section */
+  li::marker {
+    font-size: 1.4rem;
+    top: 5px;
+}
+  .WeightLossW2-section {
+    padding: 60px 20px;
+    text-align: left;
+  }
+  .WeightLossW2-section h2 {
+    font-size: 3.0em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+    text-align: left;
+  }
+  .WeightLossW2-section h3 {
+    font-size: 2.0em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+  }
+  .WeightLossW2-section h4 {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+  }
+  .WeightLossW2-section p {
+    font-size: 1.3em;
+    margin-bottom: 40px;
+    color: #555;
+    text-align: center;
+    max-width: 800px;
+  }
+  /* WeightLossW3-section */
+  li::marker {
+    font-size: 1.4rem;
+    top: 5px;
+}
+  .WeightLossW3-section {
+    padding: 60px 20px;
+    text-align: left;
+  }
+  .WeightLossW3-section h2 {
+    font-size: 3.0em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+    text-align: left;
+  }
+  .WeightLossW3-section h3 {
+    font-size: 2.0em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+  }
+  .WeightLossW3-section h4 {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+  }
+  .WeightLossW3-section p {
+    font-size: 1.3em;
+    margin-bottom: 40px;
+    color: #555;
+    text-align: center;
+    max-width: 800px;
+  }
+  /* WeightLossW4-section */
+  li::marker {
+    font-size: 1.4rem;
+    top: 5px;
+}
+  .WeightLossW4-section {
+    padding: 60px 20px;
+    text-align: left;
+  }
+  .WeightLossW4-section h2 {
+    font-size: 3.0em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+    text-align: left;
+  }
+  .WeightLossW4-section h3 {
+    font-size: 2.0em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+  }
+  .WeightLossW4-section h4 {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+  }
+  .WeightLossW4-section p {
+    font-size: 1.3em;
+    margin-bottom: 40px;
+    color: #555;
+    text-align: center;
+    max-width: 800px;
+  }
+  /* WeightLossW5-section */
+  li::marker {
+    font-size: 1.4rem;
+    top: 5px;
+}
+  .WeightLossW5-section {
+    padding: 60px 20px;
+    text-align: left;
+  }
+  .WeightLossW5-section h2 {
+    font-size: 3.0em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+    text-align: left;
+  }
+  .WeightLossW5-section h3 {
+    font-size: 2.0em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+  }
+  .WeightLossW5-section h4 {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+  }
+  .WeightLossW5-section p {
+    font-size: 1.3em;
+    margin-bottom: 40px;
+    color: #555;
+    text-align: center;
+    max-width: 800px;
+  }
+  /* Footer */
+  footer {
+    background-color: #264653;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    font-size: 1em;
+  }
+
+  /* Image */
+  img {
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+  }
+  .Logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: auto;
+  }
+  .WeightLossW1-section > img {
+    position: absolute;
+    display: block;
+    float: right;
+    right: 0;
+    margin: 40px;
+    height: 350px;
+    width: 350px;
+    top: 800px;
+  }
+  .WeightLossW2-section > img {
+    position: absolute;
+    display: block;
+    float: right;
+    right: 0;
+    margin: 40px;
+    height: 350px;
+    width: 350px;
+    top: 1300px;
+  }
+  .WeightLossW3-section > img {
+    position: absolute;
+    display: block;
+    float: right;
+    right: 0;
+    margin: 40px;
+    height: 350px;
+    width: 350px;
+    top: 1700px;
+  }
+  .WeightLossW4-section > img {
+    position: absolute;
+    display: block;
+    float: right;
+    right: 0;
+    margin: 40px;
+    height: 350px;
+    width: 350px;
+    top: 2100px;
+  }
+  .WeightLossW5-section > img {
+    position: absolute;
+    display: block;
+    float: right;
+    right: 0;
+    margin: 40px;
+    height: 350px;
+    width: 350px;
+    top: 2550px;
+  }
+      </style>
+  </head>
+  <body>
+    <header>
+      <h1>Beginner Yoga - Fitness and Diet Planner</h1>
+      <a href="Fitness.html">
+        <img src="/Images/Logo_Final.png" alt="NourishMove Logo" class="Logo">
+    </a>
+      <nav>
+        <ul>
+          <li><a href="workouts.html">Back to Workout</a></li>
+        </ul>
+      </nav>
+    </header>
+
+      <section class="WeightLossW-section">
+      <h2>Weight Loss Workouts</h2>
+         <h3>Key Principles:</h3>
+         <p style="list-style-type:circle;">
+            <li><b>Calorie Deficit:</b> Burning more calories than you consume is key to fat loss.</li>
+            <li><b>High-Intensity Interval Training (HIIT):</b> Short bursts of high-intensity exercises followed by rest periods. HIIT is highly effective for burning calories in a short amount of time.</li>
+            <li><b>Cardiovascular Endurance:</b> Activities like running, cycling, or swimming to increase heart rate and calorie expenditure.</li>
+            <li><b>Strength Training:</b> Builds lean muscle, which helps increase metabolism and burn more calories at rest.</li>
+          </p>
+          <h4>Workout Structure</h4>
+          <p style="list-style-type:circle;">
+            <li><b>Frequency:</b> 4-6 times per week.</li>
+            <li><b>Reps & Sets:</b> 12-15 reps per set, with 3-4 sets per exercise. Short rest periods between sets.</li>
+            <li> seconds of work, followed by 15-20 seconds of rest (HIIT style).
+          </p>
+      </section>
+      <section class="WeightLossW1-section">
+        <h4>Exercise 1 Burpees </h4>
+        <img src="https://www.gofitnessplan.com/images/exercises/female/burpees.jpg" alt="Burpees Image">
+        <p style="list-style-type:circle;">
+          <h5>Instructions</h5>
+          <li>Start standing, then squat down and place hands on the floor.</li>
+          <li>Jump feet back into a plank position.</li>
+          <li>Do a push-up, chest to the floor.</li>
+          <li>Jump feet back toward hands.</li>
+          <li>Explosively jump up, reaching arms overhead.</li>
+        </p>
+      </section>
+      <section class="WeightLossW2-section">
+        <h4>Exercise 2 Jumping Jacks</h4>
+        <img src="https://cdn.shopify.com/s/files/1/0075/4673/2662/files/how-to-do-jumping-jacks.jpg" alt="Jumping Jacks Image">
+        <p style="list-style-type:circle;">
+          <h5>Instructions</h5>
+          <li>Start standing with feet together and arms by your sides.</li>
+          <li>Jump feet out wide while raising arms overhead.</li>
+          <li>Jump feet back together, lowering arms to your sides.</li>
+          <li>Keep knees slightly bent and core engaged.</li>
+          <li>Repeat continuously at a steady pace.</li>
+        </p>
+      </section>
+      <section class="WeightLossW3-section">
+        <h4>Exercise 3 Squat Jumps</h4>
+        <img src="https://www.spotebi.com/wp-content/uploads/2015/08/jump-squat-exercise-illustration.jpg" alt="Squat Jumps Image">
+        <p style="list-style-type:circle;">
+          <h5>Instructions</h5>
+          <li>Start in a squat position with feet shoulder-width apart.</li>
+          <li>Lower down, keeping chest up and knees behind toes.</li>
+          <li>Explode upwards, jumping as high as possible.</li>
+          <li>Land softly back into a squat position.</li>
+          <li>Repeat immediately for the next jump.</li>
+        </p>
+      </section>
+      <section class="WeightLossW4-section">
+        <h4>Exercise 4 High Knees</h4>
+        <img src="https://www.spotebi.com/wp-content/uploads/2014/10/high-knees-exercise-illustration.jpg" alt="High Knees Image">
+        <p style="list-style-type:circle;">
+          <h5>Instructions</h5>
+          <li>Stand tall with feet hip-width apart.</li>
+          <li>Lift one knee to your chest while swinging opposite arm.</li>
+          <li>Quickly switch legs, lifting the other knee.</li>
+          <li>Continue alternating knees at a rapid pace.</li>
+          <li>Keep core tight and stay on the balls of your feet.</li>
+        </p>
+      </section>
+      <section class="WeightLossW5-section">
+        <h4>Exercise 5 Lateral hops</h4>
+        <img src="https://www.spotebi.com/wp-content/uploads/2016/08/side-to-side-hops-exercise-illustration-spotebi.jpg" alt="Lateral hops Image">
+        <p style="list-style-type:circle;">
+          <h5>Instructions</h5>
+          <li>Stand with feet together, knees slightly bent.</li>
+          <li>Hop to one side, landing softly on both feet.</li>
+          <li>Immediately hop back to the other side.</li>
+          <li>Keep your core engaged and knees bent.</li>
+          <li>Repeat, maintaining a quick and steady rhythm.</li>
+          </p>
+      </section>
+      <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Fitness & Diet Planner. All rights reserved.</p>
+      </footer>
+    </body> 
+  </html>
+  

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Community - Yoga</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CommunityY.css" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <h1>Fitness & Diet Planner</h1>
+      <a href="yoga.html">
+        <img src="/Images/Logo_Final.png" alt="NourishMove Logo" class="Logo" />
+      </a>
+      <nav>
+        <ul>
+          <li><a href="yoga.html">Back to Yoga</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="communityY-section">
+      <h2>Engage with Fellow Yogis</h2>
+      <p>
+        Welcome to the Yoga Community! Here you can share your experiences, ask
+        questions, and connect with others on the same yoga journey. Join the
+        conversation and be part of a supportive community.
+      </p>
+
+      <!-- Community Posts -->
+      <div class="communityY-posts">
+        <div class="post">
+          <h3>Member: Emily</h3>
+          <p>
+            I just completed my first month of yoga practice! The benefits are
+            incredible. What are your favorite beginner poses?
+          </p>
+        </div>
+        <div class="post">
+          <h3>Member: Alex</h3>
+          <p>
+            Looking for suggestions on how to improve flexibility. Any tips for
+            stretching routines that helped you?
+          </p>
+        </div>
+      </div>
+
+      <!-- Add a New Post -->
+      <form id="communityY-form">
+        <h3>Share Your Experience</h3>
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          placeholder="Enter your name"
+        />
+
+        <label for="message">Message:</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="4"
+          required
+          placeholder="Write your thoughts..."
+        ></textarea>
+
+        <button type="submit">Post Message</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Yoga Community. All rights reserved.</p>
+    </footer>
+
+    <script>
+      // Community form submission
+      document
+        .getElementById("communityY-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          const name = document.getElementById("name").value;
+          const message = document.getElementById("message").value;
+
+          // Create a new post div
+          const newPost = document.createElement("div");
+          newPost.classList.add("post");
+
+          const postName = document.createElement("h3");
+          postName.textContent = "Member: " + name;
+
+          const postMessage = document.createElement("p");
+          postMessage.textContent = message;
+
+          newPost.appendChild(postName);
+          newPost.appendChild(postMessage);
+
+          // Add the new post to the communityY-posts section
+          document.querySelector(".communityY-posts").appendChild(newPost);
+
+          // Clear the form
+          document.getElementById("name").value = "";
+          document.getElementById("message").value = "";
+        });
+    </script>
+  </body>
+</html>

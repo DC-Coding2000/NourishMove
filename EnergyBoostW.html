@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personalised Workouts - Fitness</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"/>
+      <style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f9f9f9;
+    scroll-behavior: smooth;
+  }
+  header {
+    background-color: #264653;
+    padding: 15px 20px;
+    text-align: center;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  header h1 {
+    font-size: 2em;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 20px 0 0 0;
+  }
+  nav ul li {
+    margin: 0 20px;
+  }
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+  }
+  nav ul li a:hover {
+    color: #e9c46a;
+  }
+  /* EnergyBoostW-section */
+  li::marker {
+    font-size: 1.4rem;
+    top: 5px;
+}
+  .EnergyBoostW-section {
+    padding: 60px 20px;
+    text-align: left;
+  }
+  .EnergyBoostW-section h2 {
+    font-size: 3.0em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+    text-align: left;
+  }
+  .EnergyBoostW-section h3 {
+    font-size: 2.0em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+  }
+  .EnergyBoostW-section h4 {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+  }
+  .EnergyBoostW-section p {
+    font-size: 1.3em;
+    margin-bottom: 40px;
+    color: #555;
+    text-align: center;
+    max-width: 800px;
+  }
+  /* EnergyBoostW1-section */
+  li::marker {
+    font-size: 1.4rem;
+    top: 5px;
+}
+  .EnergyBoostW1-section {
+    padding: 60px 20px;
+    text-align: left;
+  }
+  .EnergyBoostW1-section h2 {
+    font-size: 3.0em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+    text-align: left;
+  }
+  .EnergyBoostW1-section h3 {
+    font-size: 2.0em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+  }
+  .EnergyBoostW1-section h4 {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+  }
+  .EnergyBoostW1-section p {
+    font-size: 1.3em;
+    margin-bottom: 40px;
+    color: #555;
+    text-align: center;
+    max-width: 800px;
+  }
+  /* EnergyBoostW2-section */
+  li::marker {
+    font-size: 1.4rem;
+    top: 5px;
+}
+  .EnergyBoostW2-section {
+    padding: 60px 20px;
+    text-align: left;
+  }
+  .EnergyBoostW2-section h2 {
+    font-size: 3.0em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+    text-align: left;
+  }
+  .EnergyBoostW2-section h3 {
+    font-size: 2.0em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+  }
+  .EnergyBoostW2-section h4 {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+  }
+  .EnergyBoostW2-section p {
+    font-size: 1.3em;
+    margin-bottom: 40px;
+    color: #555;
+    text-align: center;
+    max-width: 800px;
+  }
+  /* EnergyBoostW3-section */
+  li::marker {
+    font-size: 1.4rem;
+    top: 5px;
+}
+  .EnergyBoostW3-section {
+    padding: 60px 20px;
+    text-align: left;
+  }
+  .EnergyBoostW3-section h2 {
+    font-size: 3.0em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+    text-align: left;
+  }
+  .EnergyBoostW3-section h3 {
+    font-size: 2.0em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+  }
+  .EnergyBoostW3-section h4 {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+  }
+  .EnergyBoostW3-section p {
+    font-size: 1.3em;
+    margin-bottom: 40px;
+    color: #555;
+    text-align: center;
+    max-width: 800px;
+  }
+  /* EnergyBoostW4-section */
+  li::marker {
+    font-size: 1.4rem;
+    top: 5px;
+}
+  .EnergyBoostW4-section {
+    padding: 60px 20px;
+    text-align: left;
+  }
+  .EnergyBoostW4-section h2 {
+    font-size: 3.0em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+    text-align: left;
+  }
+  .EnergyBoostW4-section h3 {
+    font-size: 2.0em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+  }
+  .EnergyBoostW4-section h4 {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+  }
+  .EnergyBoostW4-sectionction p {
+    font-size: 1.3em;
+    margin-bottom: 40px;
+    color: #555;
+    text-align: center;
+    max-width: 800px;
+  }
+  /* EnergyBoostW5-section */
+  li::marker {
+    font-size: 1.4rem;
+    top: 5px;
+}
+  .EnergyBoostW5-section {
+    padding: 60px 20px;
+    text-align: left;
+  }
+  .EnergyBoostW5-section h2 {
+    font-size: 3.0em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+    text-align: left;
+  }
+  .EnergyBoostW5-section h3 {
+    font-size: 2.0em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+  }
+  .EnergyBoostW5-section h4 {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+  }
+  .EnergyBoostW5-section p {
+    font-size: 1.3em;
+    margin-bottom: 40px;
+    color: #555;
+    text-align: center;
+    max-width: 800px;
+  }
+  /* Footer */
+  footer {
+    background-color: #264653;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    font-size: 1em;
+  }
+
+  /* Image */
+  img {
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+  }
+  .Logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: auto;
+  }
+  .EnergyBoostW1-section > img {
+    position: absolute;
+    display: block;
+    float: right;
+    right: 0;
+    margin: 40px;
+    height: 350px;
+    width: 350px;
+    top: 850px;
+  }
+  .EnergyBoostW2-section > img {
+    position: absolute;
+    display: block;
+    float: right;
+    right: 0;
+    margin: 40px;
+    height: 350px;
+    width: 350px;
+    top: 1250px;
+  }
+  .EnergyBoostW3-section > img {
+    position: absolute;
+    display: block;
+    float: right;
+    right: 0;
+    margin: 40px;
+    height: 350px;
+    width: 350px;
+    top: 1700px;
+  }
+  .EnergyBoostW4-section > img {
+    position: absolute;
+    display: block;
+    float: right;
+    right: 0;
+    margin: 40px;
+    height: 350px;
+    width: 350px;
+    top: 2100px;
+  }
+  .EnergyBoostW5-section > img {
+    position: absolute;
+    display: block;
+    float: right;
+    right: 0;
+    margin: 40px;
+    height: 350px;
+    width: 350px;
+    top: 2500px;
+  }
+      </style>
+  </head>
+  <body>
+    <header>
+      <h1>Beginner Yoga - Fitness and Diet Planner</h1>
+      <a href="Fitness.html">
+        <img src="/Images/Logo_Final.png" alt="NourishMove Logo" class="Logo">
+    </a>
+      <nav>
+        <ul>
+          <li><a href="workouts.html">Back to Workout</a></li>
+        </ul>
+      </nav>
+    </header>
+
+      <section class="EnergyBoostW-section">
+      <h2>Energy Boost Workouts</h2>
+         <h3>Key Principles:</h3>
+         <p style="list-style-type:circle;">
+            <li><b>Moderate Intensity:</b> Exercises that get the heart rate up without exhausting the body.</li>
+            <li><b>Breathing Techniques:</b> Incorporating deep, rhythmic breathing to improve oxygen flow to muscles.</li>
+            <li><b>Full-Body Movements:</b> Engaging multiple muscle groups helps circulate blood and boost energy.</li>
+            <li><b>Endorphin Release:</b> Moderate exercise triggers the release of endorphins, which naturally boost mood and energy.</li>
+          </p>
+          <h4>Workout Structure</h4>
+          <p style="list-style-type:circle;">
+            <li><b>Frequency:</b> 3-5 times a week.</li>
+            <li><b>Reps & Sets:</b> 2-3 sets of 10-15 reps per exercise.</li>
+            <li>Keep intensity moderate to avoid fatigue while boosting energy.</li>
+          </p>
+      </section>
+      <section class="EnergyBoostW1-section">
+        <h4>Exercise 1 Walking Lunges </h4>
+        <img src="https://www.spotebi.com/wp-content/uploads/2016/12/walking-lunges-exercise-illustration-spotebi.jpg" alt="Walking Lunges Image">
+        <p style="list-style-type:circle;">
+          <h5>Instructions</h5>
+          <li>Stand tall, feet hip-width apart.</li>
+          <li>Step one foot forward, lowering both knees to 90 degrees.</li>
+          <li>Push through front heel to stand, bringing back foot forward.</li>
+          <li>Step forward with the other leg into the next lunge.</li>
+          <li>Repeat, alternating legs as you move forward.</li>
+        </p>
+      </section>
+      <section class="EnergyBoostW2-section">
+        <h4>Exercise 2 Arm Circles</h4>
+        <img src="https://www.spotebi.com/wp-content/uploads/2014/10/big-arm-circles-exercise-illustration.jpg" alt="Arm Circles Image">
+        <p style="list-style-type:circle;">
+          <h5>Instructions</h5>
+          <li>Stand with feet shoulder-width apart, arms extended out to the sides.</li>
+          <li>Make small circles with your arms going forward.</li>
+          <li>Gradually increase the size of the circles.</li>
+          <li>After several rotations, reverse direction, circling backward.</li>
+          <li>Keep core tight and arms straight throughout.</li>
+        </p>
+      </section>
+      <section class="EnergyBoostW3-section">
+        <h4>Exercise 3 Marching in Place</h4>
+        <img src="https://www.spotebi.com/wp-content/uploads/2015/02/march-in-place-exercise-illustration.jpg" alt="Marching in Place Image">
+        <p style="list-style-type:circle;">
+          <h5>Instructions</h5>
+          <li>Stand tall with feet hip-width apart.</li>
+          <li>Lift one knee towards your chest while swinging the opposite arm.</li>
+          <li>Lower the foot and repeat with the other knee.</li>
+          <li>Keep alternating legs, lifting knees high.</li>
+          <li>Maintain a steady, rhythmic pace.</li>
+        </p>
+      </section>
+      <section class="EnergyBoostW4-section">
+        <h4>Exercise 4 Standing Side Bends</h4>
+        <img src="https://www.yogaclassplan.com/wp-content/uploads/2021/01/side-bend.jpg" alt="Standing Side Bends Image">
+        <p style="list-style-type:circle;">
+          <h5>Instructions</h5>
+          <li>Stand tall with feet hip-width apart, hands on your hips or raised overhead.</li>
+          <li>Slowly bend to one side, reaching towards your knee or ankle.</li>
+          <li>Engage your core as you return to standing upright.</li>
+          <li>Repeat the bend on the opposite side.</li>
+          <li>Alternate sides, keeping movements controlled.</li>
+        </p>
+      </section>
+      <section class="EnergyBoostW5-section">
+        <h4>Exercise 5 Plank to Downward Dog</h4>
+        <img src="https://d5sbbf6usl3xq.cloudfront.net/downward_facing_dog_pose_plank_pose_flow__adho_mukha_svanasana_phalakasana_vinyasa_yoga.png" alt="Plank to Downward Dog Image">
+        <p style="list-style-type:circle;">
+          <h5>Instructions</h5>
+          <li>Start in a plank position with hands under shoulders.</li>
+          <li>Push hips up and back into a downward dog position.</li>
+          <li>Hold for a moment, stretching your back and legs.</li>
+          <li>Lower hips back down into a plank position.</li>
+          <li>Repeat, moving smoothly between the two positions.</li>
+          </p>
+      </section>
+      <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Fitness & Diet Planner. All rights reserved.</p>
+      </footer>
+    </body> 
+  </html>
+  

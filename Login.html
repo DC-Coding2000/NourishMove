@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NourishMove | Login</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Login.css" type="text/css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <img src="/Images/Logo_Final.png" alt="NourishMove Logo" class="Logo" />
+      <h1>Login to NourishMove</h1>
+      <form id="loginForm">
+        <input
+          type="text"
+          id="loginemail"
+          name="email"
+          placeholder="Enter Email"
+          required
+        />
+        <input
+          type="password"
+          id="loginPassword"
+          name="password"
+          placeholder="Enter Password"
+          required
+        />
+        <button type="submit">Login</button>
+      </form>
+      <div class="form-footer">
+        Don't have an account? <a href="Register.html">Register here</a>
+      </div>
+      <div class="homepage-link">
+        <a href="index.html">Back to Homepage</a>
+      </div>
+    </div>
+
+    <script>
+      // Login form submit handler
+      document
+        .getElementById("loginForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          // Fetching input values
+          var loginemail = document.getElementsByName("email")[0].value;
+          var loginPassword = document.getElementsByName("password")[0].value;
+
+          // Retrieve users from localStorage
+          var users = JSON.parse(localStorage.getItem("users")) || [];
+
+          // Check if the user exists
+          var userFound = users.find(function (user) {
+            return user.email === loginemail && user.password === loginPassword;
+          });
+
+          if (userFound) {
+            alert("Login successful!");
+            window.location.href = "Index.html"; // Redirect to dashboard or another page
+          } else {
+            alert("Invalid email or password. Please try again.");
+          }
+        });
+    </script>
+  </body>
+</html>

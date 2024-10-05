@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Track Your Fitness Progress</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+          }
+          body {
+            font-family: "Poppins", sans-serif;
+            background-color: #f9f9f9;
+            scroll-behavior: smooth;
+          }
+          header {
+            background-color: #264653;
+            padding: 15px 20px;
+            text-align: center;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+          }
+          header h1 {
+            font-size: 2em;
+          }
+          nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 20px 0 0 0;
+          }
+          nav ul li {
+            margin: 0 20px;
+          }
+          nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: 600;
+          }
+          nav ul li a:hover {
+            color: #e9c46a;
+          }
+
+        /* Enhanced table styling */
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin: 20px 0;
+            font-size: 18px;
+            text-align: left;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        /* Header styling */
+        th {
+            background-color: #003366; /* Navy blue background */
+            color: white; /* White text */
+            padding: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+            border-right: 1px solid white; /* Clean separation */
+        }
+
+        /* Remove the last border in the header */
+        th:last-child {
+            border-right: none;
+        }
+
+        /* Body cell styling */
+        td {
+            padding: 15px;
+            border-bottom: 1px solid #ddd; /* Light grey row border */
+            vertical-align: top;
+            background-color: #fff; /* Default white background */
+            transition: background-color 0.3s ease; /* Smooth hover effect */
+        }
+
+        /* Alternate row coloring */
+        tr:nth-child(even) {
+            background-color: #f9f9f9; /* Light grey for even rows */
+        }
+
+        /* Hover effect */
+        tr:hover td {
+            background-color: #e0e8f0; /* Light navy blue shade on hover */
+        }
+
+        /* Responsive design for smaller screens */
+        @media screen and (max-width: 768px) {
+            table {
+                font-size: 16px; /* Adjust font size */
+            }
+
+            th, td {
+                padding: 12px; /* Adjust padding */
+            }
+        }
+
+        /* Optional styling for table borders */
+        table, th, td {
+            border: none;
+        }
+
+        /* Responsive adjustment for smaller screens */
+        @media screen and (max-width: 600px) {
+            table {
+                display: block;
+                overflow-x: auto; /* Make the table horizontally scrollable */
+            }
+        }
+
+        /* Smooth shadow effect */
+        table {
+            border-radius: 10px; /* Rounded corners */
+            overflow: hidden; /* Ensures rounded corners show correctly */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+        }
+
+
+        /* Footer */
+        footer {
+            background-color: #264653;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+            font-size: 1em;
+        }
+
+
+        img {
+            height: 100vh;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .Logo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 150px;
+            height: auto;
+        }
+    </style>
+</head>
+<header>
+    <h1>Fitness & Diet Planner</h1>
+    <a href="Diet.html">
+        <img src="/Images/Logo_Final.png" alt="NourishMove Logo" class="Logo" />
+    </a>
+    <nav>
+        <ul>
+            <li><a href="Diet.html">Back to Diet</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <section>
+        <table>
+            <tr>
+                <th>Breakfast (350-400 Kcal) Any one of the following</th>
+                <th>Lunch (450-500 Kcal) Any one of the following</th>
+                <th>Dinner (500-550 Kcal) Any one of the following</th>
+            </tr>
+            <tr>
+                <td>Scrambled eggs with spinach and avocado on toast.</td>
+                <td>Chicken salad with quinoa, avocado, and olive oil dressing.</td>
+                <td>Grilled chicken with sweet potato and green beans.</td>
+            </tr>
+            <tr>
+                <td>Greek yogurt with granola, flaxseeds, and berries.</td>
+                <td>Tuna sandwich on whole wheat with cucumber and greens.</td>
+                <td>Baked salmon with couscous and sautéed zucchini.</td>
+            </tr>
+            <tr>
+                <td>Boiled eggs with turkey bacon and roasted sweet potato.</td>
+                <td>Turkey breast wrap with hummus and a side salad.</td>
+                <td>Shrimp stir-fry with bell peppers and brown rice.</td>
+            </tr>
+        </table>
+    </section>
+    <footer>
+        <p>&copy; 2024 Fitness & Diet Planner. All rights reserved.</p>
+    </footer>
+</body>
+</html>

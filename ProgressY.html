@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Progress Tracking</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="ProgressY.css" type="text/css" />
+  </head>
+  <header>
+    <h1>Fitness & Diet Planner</h1>
+    <a href="yoga.html">
+      <img src="/Images/Logo_Final.png" alt="NourishMove Logo" class="Logo" />
+    </a>
+    <nav>
+      <ul>
+        <li><a href="yoga.html">Back to Yoga</a></li>
+      </ul>
+    </nav>
+  </header>
+  <body>
+    <div class="progressY-container">
+      <h2>Track Your Progress</h2>
+
+      <!-- Progress Form -->
+      <form id="progressYForm">
+        <label for="date">Date:</label>
+        <input type="date" id="date" required />
+
+        <label for="workout">Workout Completed:</label>
+        <input
+          type="text"
+          id="workout"
+          placeholder="e.g., 30-min Yoga session"
+          required
+        />
+
+        <label for="weight">Current Weight (kg):</label>
+        <input type="number" id="weight" required />
+
+        <button type="submit">Save Progress</button>
+      </form>
+
+      <!-- Display Progress -->
+      <div class="progressY-display" id="progressYDisplay">
+        <h3>Your Progress:</h3>
+        <!-- Progress items will be dynamically inserted here -->
+      </div>
+    </div>
+
+    <script>
+      // Function to get progress from localStorage
+      function getProgressY() {
+        return JSON.parse(localStorage.getItem("progressY")) || [];
+      }
+
+      // Function to save progress in localStorage
+      function saveProgressY(progressY) {
+        localStorage.setItem("progressY", JSON.stringify(progressY));
+      }
+
+      // Function to display progress
+      function displayProgressY() {
+        const progressDisplay = document.getElementById("progressYDisplay");
+        const progress = getProgressY();
+
+        // Clear the display area before adding new items
+        progressYDisplay.innerHTML = "<h3>Your Progress:</h3>";
+
+        progress.forEach((item, index) => {
+          const div = document.createElement("div");
+          div.classList.add("progressY-item");
+          div.innerHTML = `
+                    <h3>${item.date}</h3>
+                    <p><strong>Workout:</strong> ${item.workout}</p>
+                    <p><strong>Current Weight:</strong> ${item.weight} kg</p>
+                `;
+          progressYDisplay.appendChild(div);
+        });
+      }
+
+      // Event listener for form submission
+      document
+        .getElementById("progressYForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          // Get values from form inputs
+          const date = document.getElementById("date").value;
+          const workout = document.getElementById("workout").value;
+          const weight = document.getElementById("weight").value;
+
+          // Create a progress item
+          const newProgressY = {
+            date: date,
+            workout: workout,
+            weight: weight,
+          };
+
+          // Get existing progress from localStorage
+          const progressY = getProgressY();
+
+          // Add the new progress item to the array
+          progressY.push(newProgressY);
+
+          // Save updated progress to localStorage
+          saveProgressY(progressY);
+
+          // Display the updated progress
+          displayProgressY();
+
+          // Reset the form
+          document.getElementById("progressYForm").reset();
+        });
+
+      // Display progress on page load
+      window.onload = function () {
+        displayProgressY();
+      };
+    </script>
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Fitness & Diet Planner. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

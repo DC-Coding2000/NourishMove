@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personalised Workouts - Fitness</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"/>
+      <style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f9f9f9;
+    scroll-behavior: smooth;
+  }
+  header {
+    background-color: #264653;
+    padding: 15px 20px;
+    text-align: center;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  header h1 {
+    font-size: 2em;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 20px 0 0 0;
+  }
+  nav ul li {
+    margin: 0 20px;
+  }
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+  }
+  nav ul li a:hover {
+    color: #e9c46a;
+  }
+  /* MuscleGainW-section */
+  li::marker {
+    font-size: 1.4rem;
+    top: 5px;
+}
+  .MuscleGainW-section {
+    padding: 60px 20px;
+    text-align: left;
+  }
+  .MuscleGainW-section h2 {
+    font-size: 3.0em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+    text-align: left;
+  }
+  .MuscleGainW-section h3 {
+    font-size: 2.0em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+  }
+  .MuscleGainW-section h4 {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+  }
+  .MuscleGainW-section p {
+    font-size: 1.3em;
+    margin-bottom: 40px;
+    color: #555;
+    text-align: center;
+    max-width: 800px;
+  }
+  /* MuscleGainW1-section */
+  li::marker {
+    font-size: 1.4rem;
+    top: 5px;
+}
+  .MuscleGainW1-section {
+    padding: 60px 20px;
+    text-align: left;
+  }
+  .MuscleGainW1-section h2 {
+    font-size: 3.0em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+    text-align: left;
+  }
+  .MuscleGainW1-section h3 {
+    font-size: 2.0em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+  }
+  .MuscleGainW1-section h4 {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+  }
+  .MuscleGainW1-section p {
+    font-size: 1.3em;
+    margin-bottom: 40px;
+    color: #555;
+    text-align: center;
+    max-width: 800px;
+  }
+  /* MuscleGainW2-section */
+  li::marker {
+    font-size: 1.4rem;
+    top: 5px;
+}
+  .MuscleGainW2-section {
+    padding: 60px 20px;
+    text-align: left;
+  }
+  .MuscleGainW2-section h2 {
+    font-size: 3.0em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+    text-align: left;
+  }
+  .MuscleGainW2-section h3 {
+    font-size: 2.0em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+  }
+  .MuscleGainW2-section h4 {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+  }
+  .MuscleGainW2-section p {
+    font-size: 1.3em;
+    margin-bottom: 40px;
+    color: #555;
+    text-align: center;
+    max-width: 800px;
+  }
+  /* MuscleGainW3-section */
+  li::marker {
+    font-size: 1.4rem;
+    top: 5px;
+}
+  .MuscleGainW3-section {
+    padding: 60px 20px;
+    text-align: left;
+  }
+  .MuscleGainW3-section h2 {
+    font-size: 3.0em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+    text-align: left;
+  }
+  .MuscleGainW3-section h3 {
+    font-size: 2.0em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+  }
+  .MuscleGainW3-section h4 {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+  }
+  .MuscleGainW3-section p {
+    font-size: 1.3em;
+    margin-bottom: 40px;
+    color: #555;
+    text-align: center;
+    max-width: 800px;
+  }
+  /* MuscleGainW4-section */
+  li::marker {
+    font-size: 1.4rem;
+    top: 5px;
+}
+  .MuscleGainW4-section {
+    padding: 60px 20px;
+    text-align: left;
+  }
+  .MuscleGainW4-section h2 {
+    font-size: 3.0em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+    text-align: left;
+  }
+  .MuscleGainW4-section h3 {
+    font-size: 2.0em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+  }
+  .MuscleGainW4-section h4 {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+  }
+  .MuscleGainW4-section p {
+    font-size: 1.3em;
+    margin-bottom: 40px;
+    color: #555;
+    text-align: center;
+    max-width: 800px;
+  }
+  /* MuscleGainW5-section */
+  li::marker {
+    font-size: 1.4rem;
+    top: 5px;
+}
+  .MuscleGainW5-section {
+    padding: 60px 20px;
+    text-align: left;
+  }
+  .MuscleGainW5-section h2 {
+    font-size: 3.0em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+    text-align: left;
+  }
+  .MuscleGainW5-section h3 {
+    font-size: 2.0em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+  }
+  .MuscleGainW5-section h4 {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+  }
+  .MuscleGainW5-section p {
+    font-size: 1.3em;
+    margin-bottom: 40px;
+    color: #555;
+    text-align: center;
+    max-width: 800px;
+  }
+  /* Footer */
+  footer {
+    background-color: #264653;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    font-size: 1em;
+  }
+
+  /* Image */
+  img {
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+  }
+  .Logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: auto;
+  }
+  .MuscleGainW1-section > img {
+    position: absolute;
+    display: block;
+    float: right;
+    right: 0;
+    margin: 40px;
+    height: 350px;
+    width: 350px;
+    top: 700px;
+  }
+  .MuscleGainW2-section > img {
+    position: absolute;
+    display: block;
+    float: right;
+    right: 0;
+    margin: 40px;
+    height: 350px;
+    width: 350px;
+    top: 1200px;
+  }
+  .MuscleGainW3-section > img {
+    position: absolute;
+    display: block;
+    float: right;
+    right: 0;
+    margin: 40px;
+    height: 350px;
+    width: 350px;
+    top: 1650px;
+  }
+  .MuscleGainW4-section > img {
+    position: absolute;
+    display: block;
+    float: right;
+    right: 0;
+    margin: 40px;
+    height: 350px;
+    width: 350px;
+    top: 2100px;
+  }
+  .MuscleGainW5-section > img {
+    position: absolute;
+    display: block;
+    float: right;
+    right: 0;
+    margin: 40px;
+    height: 350px;
+    width: 350px;
+    top: 2500px;
+  }
+      </style>
+  </head>
+  <body>
+    <header>
+      <h1>Beginner Yoga - Fitness and Diet Planner</h1>
+      <a href="Fitness.html">
+        <img src="/Images/Logo_Final.png" alt="NourishMove Logo" class="Logo">
+    </a>
+      <nav>
+        <ul>
+          <li><a href="workouts.html">Back to Workout</a></li>
+        </ul>
+      </nav>
+    </header>
+
+      <section class="MuscleGainW-section">
+      <h2>Muscle Gain Workouts</h2>
+         <h3>Key Principles:</h3>
+         <p style="list-style-type:circle;">
+            <li><b>Progressive Overload:</b> Gradually increasing the weight or resistance used in workouts to challenge the muscles and encourage growth.</li>
+            <li><b>Compound Movements:</b> Exercises like squats, deadlifts, bench presses, and pull-ups that engage multiple muscle groups at once.</li>
+            <li><b>High Protein Intake:</b> Essential for muscle repair and growth, typically combined with a calorie surplus.</li>
+            <li><b>Rest & Recovery:</b> Muscles grow during rest, so recovery between sessions is crucial.</li>
+          </p>
+          <h4>Workout Structure</h4>
+          <p style="list-style-type:circle;">
+            <li><b>Frequency:</b> 3-5 times per week, focusing on different muscle groups each day (e.g., legs, chest, back, shoulders).</li>
+            <li><b>Reps & Sets:</b> 6-12 reps per set, with 3-5 sets per exercise.</li>
+          </p>
+      </section>
+      <section class="MuscleGainW1-section">
+        <h4>Exercise 1 Push-Ups</h4>
+        <img src="https://blog.aqfsports.com/wp-content/uploads/2023/06/f977c7c23e.jpeg" alt="Push-Ups Image">
+        <p style="list-style-type:circle;">
+          <h5>Instructions</h5>
+          <li>With your legs extended back, place the hands below the shoulders, slightly wider than shoulder-width apart.</li>
+          <li>Start bending your elbows and lower your chest until it's just above the floor.</li>
+          <li>Push back to the starting position. A 1-second push, 1-second pause, 2-second down count is ideal.</li>
+          <li>Repeat.</li>
+        </p>
+      </section>
+      <section class="MuscleGainW2-section">
+        <h4>Exercise 2 Squats</h4>
+        <img src="https://www.wikihow.com/images/thumb/b/b1/Do-Free-Squats-Step-11-Version-2.jpg/v4-460px-Do-Free-Squats-Step-11-Version-2.jpg.webp" alt="Squats Image">
+        <p style="list-style-type:circle;">
+          <h5>Instructions</h5>
+          <li>Stand with feet shoulder-width apart.</li>
+          <li>Push hips back, as if sitting in a chair.</li>
+          <li>Lower down until thighs are parallel to the floor.</li>
+          <li>Keep chest up and knees behind toes.</li>
+          <li>Push through heels to stand back up.</li>
+        </p>
+      </section>
+      <section class="MuscleGainW3-section">
+        <h4>Exercise 3 Lunges</h4>
+        <img src="https://www.spotebi.com/wp-content/uploads/2015/02/jumping-lunges-exercise-illustration.jpg" alt="Lunges Image">
+        <p style="list-style-type:circle;">
+          <h5>Instructions</h5>
+          <li>Stand tall with feet hip-width apart.</li>
+          <li>Step one foot forward, lowering hips until both knees are bent at 90 degrees.</li>
+          <li>Keep front knee above ankle and back knee off the ground.</li>
+          <li>Push through front heel to return to standing.</li>
+          <li>Repeat on the other leg.</li>
+        </p>
+      </section>
+      <section class="MuscleGainW4-section">
+        <h4>Exercise 4 Planks</h4>
+        <img src="https://www.spotebi.com/wp-content/uploads/2014/10/plank-exercise-illustration.jpg" alt="Planks Image">
+        <p style="list-style-type:circle;">
+          <h5>Instructions</h5>
+          <li>Start on all fours, elbows under shoulders.</li>
+          <li>Extend legs back, balancing on toes.</li>
+          <li>Keep body in a straight line from head to heels.</li>
+          <li>Engage core, avoiding sagging hips or raised back.</li>
+          <li>Hold the position, breathing steadily.</li>
+          <li>Hold the position, Until 2 minutes completed do this two times.</li>
+        </p>
+      </section>
+      <section class="MuscleGainW5-section">
+        <h4>Exercise 5 Pike Push-Ups</h4>
+        <img src="https://www.spotebi.com/wp-content/uploads/2016/03/pike-push-up-exercise-illustration-spotebi.jpg" alt="Pike Push-Ups Image">
+        <p style="list-style-type:circle;">
+          <h5>Instructions</h5>
+          <li>Start in a downward dog position with hips raised.</li>
+          <li>Hands shoulder-width apart, head between arms.</li>
+          <li>Lower head towards the floor by bending elbows.</li>
+          <li>Keep back straight and hips high.</li>
+          <li>Push through hands to return to the start.</li>
+          </p>
+      </section>
+     <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Fitness & Diet Planner. All rights reserved.</p>
+    </footer>
+  </body> 
+</html>

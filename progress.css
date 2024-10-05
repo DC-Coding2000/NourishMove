@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f9f9f9;
+  scroll-behavior: smooth;
+}
+header {
+  background-color: #264653;
+  padding: 15px 20px;
+  text-align: center;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+header h1 {
+  font-size: 2em;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 20px 0 0 0;
+}
+nav ul li {
+  margin: 0 20px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+nav ul li a:hover {
+  color: #e9c46a;
+}
+.Progress-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+h2 {
+  text-align: center;
+  color: #264653;
+}
+label {
+  display: block;
+  margin-top: 15px;
+}
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background-color: #2a9d8f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #21867a;
+}
+.ProgressY-display {
+  margin-top: 30px;
+}
+.Progress-item {
+  padding: 10px;
+  background-color: #e9c46a;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+.Progress-item h3 {
+  margin: 0;
+  color: #264653;
+}
+.Progress-item p {
+  margin: 5px 0;
+}
+
+/* Footer */
+footer {
+  background-color: #264653;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;
+  font-size: 1em;
+}
+
+/* Image */
+img {
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+}
+.Logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: auto;
+}

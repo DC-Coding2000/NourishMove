@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personalised Workouts - Fitness</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"/>
+      <style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f9f9f9;
+    scroll-behavior: smooth;
+  }
+  header {
+    background-color: #264653;
+    padding: 15px 20px;
+    text-align: center;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  header h1 {
+    font-size: 2em;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 20px 0 0 0;
+  }
+  nav ul li {
+    margin: 0 20px;
+  }
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+  }
+  nav ul li a:hover {
+    color: #e9c46a;
+  }
+  /* DetoxW-section */
+  li::marker {
+    font-size: 1.4rem;
+    top: 5px;
+}
+  .DetoxW-section {
+    padding: 60px 20px;
+    text-align: left;
+  }
+  .DetoxW-section h2 {
+    font-size: 3.0em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+    text-align: left;
+  }
+  .DetoxW-section h3 {
+    font-size: 2.0em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+  }
+  .DetoxW-section h4 {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+  }
+  .DetoxW-section p {
+    font-size: 1.3em;
+    margin-bottom: 40px;
+    color: #555;
+    text-align: center;
+    max-width: 800px;
+  }
+  /* DetoxW1-section */
+  li::marker {
+    font-size: 1.4rem;
+    top: 5px;
+}
+  .DetoxW1-section {
+    padding: 60px 20px;
+    text-align: left;
+  }
+  .DetoxW1-section h2 {
+    font-size: 3.0em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+    text-align: left;
+  }
+  .DetoxW1-section h3 {
+    font-size: 2.0em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+  }
+  .DetoxW1-section h4 {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+  }
+  .DetoxW1-section p {
+    font-size: 1.3em;
+    margin-bottom: 40px;
+    color: #555;
+    text-align: center;
+    max-width: 800px;
+  }
+  /* DetoxW2-section */
+  li::marker {
+    font-size: 1.4rem;
+    top: 5px;
+}
+  .DetoxW2-section {
+    padding: 60px 20px;
+    text-align: left;
+  }
+  .DetoxW2-section h2 {
+    font-size: 3.0em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+    text-align: left;
+  }
+  .DetoxW2-section h3 {
+    font-size: 2.0em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+  }
+  .DetoxW2-section h4 {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+  }
+  .DetoxW2-section p {
+    font-size: 1.3em;
+    margin-bottom: 40px;
+    color: #555;
+    text-align: center;
+    max-width: 800px;
+  }
+  /* DetoxW3-section */
+  li::marker {
+    font-size: 1.4rem;
+    top: 5px;
+}
+  .DetoxW3-section {
+    padding: 60px 20px;
+    text-align: left;
+  }
+  .DetoxW3-section h2 {
+    font-size: 3.0em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+    text-align: left;
+  }
+  .DetoxW3-section h3 {
+    font-size: 2.0em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+  }
+  .DetoxW3-section h4 {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+  }
+  .DetoxW4-section p {
+    font-size: 1.3em;
+    margin-bottom: 40px;
+    color: #555;
+    text-align: center;
+    max-width: 800px;
+  }
+  /* DetoxW4-section */
+  li::marker {
+    font-size: 1.4rem;
+    top: 5px;
+}
+  .DetoxW4-section {
+    padding: 60px 20px;
+    text-align: left;
+  }
+  .DetoxW4-section h2 {
+    font-size: 3.0em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+    text-align: left;
+  }
+  .DetoxW4-section h3 {
+    font-size: 2.0em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+  }
+  .DetoxW4-section h4 {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+  }
+  .DetoxW4-section p {
+    font-size: 1.3em;
+    margin-bottom: 40px;
+    color: #555;
+    text-align: center;
+    max-width: 800px;
+  }
+  /* DetoxW5-section */
+  li::marker {
+    font-size: 1.4rem;
+    top: 5px;
+}
+  .DetoxW5-section {
+    padding: 60px 20px;
+    text-align: left;
+  }
+  .DetoxW5-section h2 {
+    font-size: 3.0em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+    text-align: left;
+  }
+  .DetoxW5-section h3 {
+    font-size: 2.0em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+  }
+  .DetoxW5-section h4 {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+  }
+  .DetoxW5-section p {
+    font-size: 1.3em;
+    margin-bottom: 40px;
+    color: #555;
+    text-align: center;
+    max-width: 800px;
+  }
+  /* Footer */
+  footer {
+    background-color: #264653;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    font-size: 1em;
+  }
+
+  /* Image */
+  img {
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+  }
+  .Logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: auto;
+  }
+  .DetoxW1-section > img {
+    position: absolute;
+    display: block;
+    float: right;
+    right: 0;
+    margin: 40px;
+    height: 350px;
+    width: 350px;
+    top: 800px;
+  }
+  .DetoxW2-section > img {
+    position: absolute;
+    display: block;
+    float: right;
+    right: 0;
+    margin: 40px;
+    height: 350px;
+    width: 350px;
+    top: 1250px;
+  }
+  .DetoxW3-section > img {
+    position: absolute;
+    display: block;
+    float: right;
+    right: 0;
+    margin: 40px;
+    height: 350px;
+    width: 350px;
+    top: 1650px;
+  }
+  .DetoxW4-section > img {
+    position: absolute;
+    display: block;
+    float: right;
+    right: 0;
+    margin: 40px;
+    height: 350px;
+    width: 350px;
+    top: 2050px;
+  }
+  .DetoxW5-section > img {
+    position: absolute;
+    display: block;
+    float: right;
+    right: 0;
+    margin: 40px;
+    height: 350px;
+    width: 350px;
+    top: 2450px;
+  }
+      </style>
+  </head>
+  <body>
+    <header>
+      <h1>Beginner Yoga - Fitness and Diet Planner</h1>
+      <a href="Fitness.html">
+        <img src="/Images/Logo_Final.png" alt="NourishMove Logo" class="Logo">
+    </a>
+      <nav>
+        <ul>
+          <li><a href="workouts.html">Back to Workout</a></li>
+        </ul>
+      </nav>
+    </header>
+
+      <section class="DetoxW-section">
+      <h2>Detox Workouts</h2>
+         <h3>Key Principles:</h3>
+         <p style="list-style-type:circle;">
+            <li><b>Gentle, Flowing Movements:</b> Exercises that stimulate circulation without overexerting the body, such as yoga, stretching, or Pilates.</li>
+            <li><b>Breathwork:</b> Deep, diaphragmatic breathing helps oxygenate the body and improve lymphatic flow.</li>
+            <li><b>Sweating:</b> Activities that induce sweating aid in releasing toxins through the skin.</li>
+            <li><b>Hydration:</b> Important for flushing out toxins, so drink water during and after the workout.</li>
+          </p>
+          <h4>Workout Structure</h4>
+          <p style="list-style-type:circle;">
+            <li><b>Frequency:</b> 3-5 times per week.</li>
+            <li><b>Reps & Sets:</b> 2-3 sets of 8-12 reps per exercise. Short rest periods between sets between 10 and 15 seconds.</li>
+          </p>
+      </section>
+      <section class="DetoxW1-section">
+        <h4>Exercise 1 Forward Bend </h4>
+        <img src="https://www.spotebi.com/wp-content/uploads/2016/01/standing-forward-bend-pose-uttanasana.jpg" alt="Forward Bend Image">
+        <p style="list-style-type:circle;">
+          <h5>Instructions</h5>
+          <li>Stand tall with feet hip-width apart.</li>
+          <li>Hinge at the hips, slowly bending forward.</li>
+          <li>Keep your back straight as you reach toward the floor.</li>
+          <li>Let your head and neck relax, and soften your knees if needed.</li>
+          <li>Hold the stretch, then slowly rise back to standing.</li>
+        </p>
+      </section>
+      <section class="DetoxW2-section">
+        <h4>Exercise 2 Sun Salutations</h4>
+        <img src="https://d5sbbf6usl3xq.cloudfront.net/suryanamaskar_yoga.png" alt="Sun Salutations Image">
+        <p style="list-style-type:circle;">
+          <h5>Instructions</h5>
+          <li>Stand tall, inhale, and raise arms overhead.</li>
+          <li>Exhale, fold forward into a forward bend.</li>
+          <li>Inhale, step back into a plank, then lower into a push-up.</li>
+          <li>Inhale, lift chest into upward dog; exhale, push hips into downward dog.</li>
+          <li>Step forward, inhale to stand, and reach arms overhead again.</li>
+        </p>
+      </section>
+      <section class="DetoxW3-section">
+        <h4>Exercise 3 Legs Up the  wall</h4>
+        <img src="https://www.spotebi.com/wp-content/uploads/2015/11/legs-up-the-wall-pose-viparita-karani.jpg" alt="Legs Up the  wall Image">
+        <p style="list-style-type:circle;">
+          <h5>Instructions</h5>
+          <li>Sit next to a wall with one hip touching it.</li>
+          <li>Lie back and swing your legs up against the wall.</li>
+          <li>Adjust so your hips are close to the wall and legs are straight.</li>
+          <li>Relax your arms by your sides and soften your gaze.</li>
+          <li>Hold the position, breathing deeply for several minutes.</li>
+        </p>
+      </section>
+      <section class="DetoxW4-section">
+        <h4>Exercise 4 Spinal Roll</h4>
+        <img src="https://d5sbbf6usl3xq.cloudfront.net/spinal_roll_down_flow___yoga.png" alt="Spinal Roll Image">
+        <p style="list-style-type:circle;">
+          <h5>Instructions</h5>
+          <li>Stand tall with feet hip-width apart, arms relaxed.</li>
+          <li>Slowly tuck your chin to your chest.</li>
+          <li>Roll down one vertebra at a time, reaching toward the floor.</li>
+          <li>Let your head and arms hang at the bottom.</li>
+          <li>Roll back up slowly, stacking your spine until you're standing tall again.</li>
+        </p>
+      </section>
+      <section class="DetoxW5-section">
+        <h4>Exercise 5 Cat-Cow Stretch</h4>
+        <img src="https://i.pinimg.com/474x/43/30/f4/4330f4acc65e575980fc076cd61a6bcd.jpg" alt="Cat-Cow Stretch Image">
+        <p style="list-style-type:circle;">
+          <h5>Instructions</h5>
+          <li>Start on all fours, hands under shoulders and knees under hips.</li>
+          <li>Inhale, arch your back, lifting your head and tailbone (Cow pose).</li>
+          <li>Exhale, round your back, tucking your chin and pelvis (Cat pose).</li>
+          <li>Flow smoothly between the two poses with each breath.</li>
+          <li>Repeat for several breaths, keeping movements slow and controlled.</li>
+          </p>
+      </section>
+      <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Fitness & Diet Planner. All rights reserved.</p>
+      </footer>
+    </body> 
+  </html>

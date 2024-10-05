@@ -1,0 +1,359 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f9f9f9;
+  scroll-behavior: smooth;
+}
+header {
+  background-color: #264653;
+  padding: 15px 20px;
+  text-align: center;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+header h1 {
+  font-size: 2em;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 20px 0 0 0;
+}
+nav ul li {
+  margin: 0 20px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+nav ul li a:hover {
+  color: #e9c46a;
+}
+/* BYoga Section */
+li::marker {
+  font-size: 1.4rem;
+  top: 5px;
+}
+.BYoga-section {
+  padding: 60px 20px;
+  text-align: left;
+}
+.BYoga-section h2 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+  text-align: left;
+}
+.BYoga-section h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+.BYoga-section h4 {
+  font-size: 1.6em;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+.BYoga-section p {
+  font-size: 1.3em;
+  margin-bottom: 40px;
+  color: #555;
+  text-align: center;
+  max-width: 800px;
+}
+/* BYoga-section2 */
+.BYoga-section2 {
+  padding: 60px 20px;
+  text-align: left;
+}
+.BYoga-section2 h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+.BYoga-section2 h4 {
+  font-size: 1.6em;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+.BYoga-section2 p {
+  font-size: 1.3em;
+  margin-bottom: 40px;
+  color: #555;
+  text-align: center;
+  max-width: 800px;
+}
+
+/* BYoga-section3 */
+.BYoga-section3 {
+  padding: 60px 20px;
+  text-align: left;
+}
+.BYoga-section3 h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+.BYoga-section3 h4 {
+  font-size: 1.6em;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+.BYoga-section3 p {
+  font-size: 1.3em;
+  margin-bottom: 40px;
+  color: #555;
+  text-align: center;
+  max-width: 800px;
+}
+/* BYoga-section3 */
+.BYoga-section3 {
+  padding: 60px 20px;
+  text-align: left;
+}
+.BYoga-section3 h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+.BYoga-section3 h4 {
+  font-size: 1.6em;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+.BYoga-section3 p {
+  font-size: 1.3em;
+  margin-bottom: 40px;
+  color: #555;
+  text-align: center;
+  max-width: 800px;
+}
+
+/* BYoga-section4 */
+.BYoga-section4 {
+  padding: 60px 20px;
+  text-align: left;
+}
+.BYoga-section4 h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+.BYoga-section4 h4 {
+  font-size: 1.6em;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+.BYoga-section4 p {
+  font-size: 1.3em;
+  margin-bottom: 40px;
+  color: #555;
+  text-align: center;
+  max-width: 800px;
+}
+/* BYoga-section5 */
+.BYoga-section5 {
+  padding: 60px 20px;
+  text-align: left;
+}
+.BYoga-section5 h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+.BYoga-section5 h4 {
+  font-size: 1.6em;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+.BYoga-section5 p {
+  font-size: 1.3em;
+  margin-bottom: 40px;
+  color: #555;
+  text-align: center;
+  max-width: 800px;
+}
+
+/* BYoga-section6 */
+.BYoga-section6 {
+  padding: 60px 20px;
+  text-align: left;
+}
+.BYoga-section6 h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+.BYoga-section6 h4 {
+  font-size: 1.6em;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+.BYoga-section6 p {
+  font-size: 1.3em;
+  margin-bottom: 40px;
+  color: #555;
+  text-align: center;
+  max-width: 800px;
+}
+
+/* BYoga-section7 */
+.BYoga-section7 {
+  padding: 60px 20px;
+  text-align: left;
+}
+.BYoga-section7 h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+.BYoga-section7 h4 {
+  font-size: 1.6em;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+.BYoga-section7 p {
+  font-size: 1.3em;
+  margin-bottom: 40px;
+  color: #555;
+  text-align: center;
+  max-width: 800px;
+}
+
+/* BYoga-section8 */
+.BYoga-section8 {
+  padding: 60px 20px;
+  text-align: left;
+}
+.BYoga-section8 h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+.BYoga-section8 h4 {
+  font-size: 1.6em;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+.BYoga-section8 p {
+  font-size: 1.3em;
+  margin-bottom: 40px;
+  color: #555;
+  text-align: center;
+  max-width: 800px;
+}
+
+/* Footer */
+footer {
+  background-color: #264653;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;
+  font-size: 1em;
+}
+
+/* Image */
+img {
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+}
+.Logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: auto;
+}
+
+.BYoga-section img {
+  display: block;
+  float: right;
+  position: absolute;
+  height: 400px;
+  width: 500px;
+  margin: 20px;
+  top: 400px;
+  right: 0;
+}
+.BYoga-section2 img {
+  display: block;
+  float: right;
+  position: absolute;
+  height: 400px;
+  width: 500px;
+  margin: 20px;
+  top: 1100px;
+  right: 0;
+}
+.BYoga-section3 img {
+  display: block;
+  float: right;
+  position: absolute;
+  height: 500px;
+  width: 500px;
+  margin: 20px;
+  top: 1800px;
+  right: 0;
+}
+.BYoga-section4 img {
+  display: block;
+  float: right;
+  position: absolute;
+  height: 500px;
+  width: 500px;
+  margin: 20px;
+  top: 2550px;
+  right: 0;
+}
+.BYoga-section5 img {
+  display: block;
+  float: right;
+  position: absolute;
+  height: 500px;
+  width: 500px;
+  margin: 20px;
+  top: 3300px;
+  right: 0;
+}
+.BYoga-section6 img {
+  display: block;
+  float: right;
+  position: absolute;
+  height: 500px;
+  width: 480px;
+  margin: 20px;
+  top: 4050px;
+  right: 0;
+}
+.BYoga-section7 img {
+  display: block;
+  float: right;
+  position: absolute;
+  height: 500px;
+  width: 480px;
+  margin: 20px;
+  top: 4850px;
+  right: 0;
+}
+.BYoga-section8 img {
+  display: block;
+  float: right;
+  position: absolute;
+  height: 500px;
+  width: 480px;
+  margin: 20px;
+  top: 5550px;
+  right: 0;
+}

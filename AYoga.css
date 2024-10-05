@@ -1,0 +1,404 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f9f9f9;
+  scroll-behavior: smooth;
+}
+header {
+  background-color: #264653;
+  padding: 15px 20px;
+  text-align: center;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+header h1 {
+  font-size: 2em;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 20px 0 0 0;
+}
+nav ul li {
+  margin: 0 20px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+nav ul li a:hover {
+  color: #e9c46a;
+}
+/* AYoga Section */
+.AYoga-section {
+  padding: 60px 20px;
+  text-align: left;
+}
+.AYoga-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+.AYoga-section p {
+  font-size: 1.1em;
+  margin-bottom: 40px;
+  color: #555;
+  max-width: 800px;
+  margin-left: 0%;
+  margin-right: 0%;
+  text-align: left;
+}
+/* AYoga-section */
+.AYoga-section {
+  padding: 60px 20px;
+  text-align: left;
+}
+.AYoga-section h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+.AYoga-section h4 {
+  font-size: 1.6em;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+.AYoga-section p {
+  font-size: 1.3em;
+  margin-bottom: 40px;
+  color: #555;
+  text-align: center;
+  max-width: 800px;
+}
+/* AYoga-section2 */
+.AYoga-section2 {
+  padding: 60px 20px;
+  text-align: left;
+}
+.AYoga-section2 h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+.AYoga-section2 h4 {
+  font-size: 1.6em;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+.AYoga-section2 p {
+  font-size: 1.3em;
+  margin-bottom: 40px;
+  color: #555;
+  text-align: center;
+  max-width: 800px;
+}
+/* AYoga-section3 */
+.AYoga-section3 {
+  padding: 60px 20px;
+  text-align: left;
+}
+.AYoga-section3 h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+.AYoga-section3 h4 {
+  font-size: 1.6em;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+.AYoga-section3 p {
+  font-size: 1.3em;
+  margin-bottom: 40px;
+  color: #555;
+  text-align: center;
+  max-width: 800px;
+}
+/* AYoga-section4 */
+.AYoga-section4 {
+  padding: 60px 20px;
+  text-align: left;
+}
+.AYoga-section4 h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+.AYoga-section4 h4 {
+  font-size: 1.6em;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+.AYoga-section4 p {
+  font-size: 1.3em;
+  margin-bottom: 40px;
+  color: #555;
+  text-align: center;
+  max-width: 800px;
+}
+/* AYoga-section5 */
+.AYoga-section5 {
+  padding: 60px 20px;
+  text-align: left;
+}
+.AYoga-section5 h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+.AYoga-section5 h4 {
+  font-size: 1.6em;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+.AYoga-section5 p {
+  font-size: 1.3em;
+  margin-bottom: 40px;
+  color: #555;
+  text-align: center;
+  max-width: 800px;
+}
+/* AYoga-section6 */
+.AYoga-section6 {
+  padding: 60px 20px;
+  text-align: left;
+}
+.AYoga-section6 h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+.AYoga-section6 h4 {
+  font-size: 1.6em;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+.AYoga-section6 p {
+  font-size: 1.3em;
+  margin-bottom: 40px;
+  color: #555;
+  text-align: center;
+  max-width: 800px;
+}
+/* AYoga-section7 */
+.AYoga-section7 {
+  padding: 60px 20px;
+  text-align: left;
+}
+.AYoga-section7 h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+.AYoga-section7 h4 {
+  font-size: 1.6em;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+.AYoga-section7 p {
+  font-size: 1.3em;
+  margin-bottom: 40px;
+  color: #555;
+  text-align: center;
+  max-width: 800px;
+}
+/* AYoga-section8 */
+.AYoga-section8 {
+  padding: 60px 20px;
+  text-align: left;
+}
+.AYoga-section8 h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+.AYoga-section8 h4 {
+  font-size: 1.6em;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+.AYoga-section8 p {
+  font-size: 1.3em;
+  margin-bottom: 40px;
+  color: #555;
+  text-align: center;
+  max-width: 800px;
+}
+/* AYoga-section9 */
+.AYoga-section9 {
+  padding: 60px 20px;
+  text-align: left;
+}
+.AYoga-section9 h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+.AYoga-section9 h4 {
+  font-size: 1.6em;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+.AYoga-section9 p {
+  font-size: 1.3em;
+  margin-bottom: 40px;
+  color: #555;
+  text-align: center;
+  max-width: 800px;
+}
+
+/* AYoga-section10 */
+.AYoga-section10 {
+  padding: 60px 20px;
+  text-align: left;
+}
+.AYoga-section10 h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+.AYoga-section10 h4 {
+  font-size: 1.6em;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+.AYoga-section10 p {
+  font-size: 1.3em;
+  margin-bottom: 40px;
+  color: #555;
+  text-align: center;
+  max-width: 800px;
+}
+/* Footer */
+footer {
+  background-color: #264653;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;
+  font-size: 1em;
+}
+
+/* Image */
+img {
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+}
+.Logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: auto;
+}
+.AYoga-section img {
+  display: block;
+  float: right;
+  position: absolute;
+  height: 400px;
+  width: 500px;
+  margin: 20px;
+  top: 550px;
+  right: 0;
+}
+.AYoga-section2 img {
+  display: block;
+  float: right;
+  position: absolute;
+  height: 400px;
+  width: 500px;
+  margin: 20px;
+  top: 1300px;
+  right: 0;
+}
+.AYoga-section3 img {
+  display: block;
+  float: right;
+  position: absolute;
+  height: 400px;
+  width: 500px;
+  margin: 20px;
+  top: 2050px;
+  right: 0;
+}
+.AYoga-section4 img {
+  display: block;
+  float: right;
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  margin: 50px;
+  top: 2750px;
+  right: 0;
+}
+.AYoga-section5 img {
+  display: block;
+  float: right;
+  position: absolute;
+  height: 400px;
+  width: 500px;
+  margin: 20px;
+  top: 3600px;
+  right: 0;
+}
+.AYoga-section6 img {
+  display: block;
+  float: right;
+  position: absolute;
+  height: 400px;
+  width: 500px;
+  margin: 20px;
+  top: 4300px;
+  right: 0;
+}
+.AYoga-section7 img {
+  display: block;
+  float: right;
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  margin: 20px;
+  top: 5050px;
+  right: 0;
+}
+.AYoga-section8 img {
+  display: block;
+  float: right;
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  margin: 20px;
+  top: 5800px;
+  right: 0;
+}
+.AYoga-section9 img {
+  display: block;
+  float: right;
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  margin: 50px;
+  top: 6500px;
+  right: 0;
+}
+.AYoga-section10 img {
+  display: block;
+  float: right;
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  margin: 80px;
+  top: 7300px;
+  right: 0;
+}

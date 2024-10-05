@@ -1,0 +1,358 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f9f9f9;
+  scroll-behavior: smooth;
+}
+header {
+  background-color: #264653;
+  padding: 15px 20px;
+  text-align: center;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.IYoga-section h2 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+  text-align: left;
+}
+header h1 {
+  font-size: 2em;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 20px 0 0 0;
+}
+nav ul li {
+  margin: 0 20px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+nav ul li a:hover {
+  color: #e9c46a;
+}
+/* IYoga-section */
+.IYoga-section {
+  padding: 60px 20px;
+  text-align: left;
+}
+.IYoga-section h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+.IYoga-section h4 {
+  font-size: 1.6em;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+.IYoga-section p {
+  font-size: 1.3em;
+  margin-bottom: 40px;
+  color: #555;
+  text-align: center;
+  max-width: 800px;
+}
+/* IYoga-section2 */
+.IYoga-section2 {
+  padding: 60px 20px;
+  text-align: left;
+}
+.IYoga-section2 h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+.IYoga-section2 h4 {
+  font-size: 1.6em;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+.IYoga-section2 p {
+  font-size: 1.3em;
+  margin-bottom: 40px;
+  color: #555;
+  text-align: center;
+  max-width: 800px;
+}
+/* IYoga-section3 */
+.IYoga-section3 {
+  padding: 60px 20px;
+  text-align: left;
+}
+.IYoga-section3 h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+.IYoga-section3 h4 {
+  font-size: 1.6em;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+.IYoga-section3 p {
+  font-size: 1.3em;
+  margin-bottom: 40px;
+  color: #555;
+  text-align: center;
+  max-width: 800px;
+}
+/* IYoga-section4 */
+.IYoga-section4 {
+  padding: 60px 20px;
+  text-align: left;
+}
+.IYoga-section4 h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+.IYoga-section4 h4 {
+  font-size: 1.6em;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+.IYoga-section4 p {
+  font-size: 1.3em;
+  margin-bottom: 40px;
+  color: #555;
+  text-align: center;
+  max-width: 800px;
+}
+/* IYoga-section5 */
+.IYoga-section5 {
+  padding: 60px 20px;
+  text-align: left;
+}
+.IYoga-section5 h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+.IYoga-section5 h4 {
+  font-size: 1.6em;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+.IYoga-section5 p {
+  font-size: 1.3em;
+  margin-bottom: 40px;
+  color: #555;
+  text-align: center;
+  max-width: 800px;
+}
+/* IYoga-section6 */
+.IYoga-section6 {
+  padding: 60px 20px;
+  text-align: left;
+}
+.IYoga-section6 h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+.IYoga-section6 h4 {
+  font-size: 1.6em;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+.IYoga-section6 p {
+  font-size: 1.3em;
+  margin-bottom: 40px;
+  color: #555;
+  text-align: center;
+  max-width: 800px;
+}
+/* IYoga-section7 */
+.IYoga-section7 {
+  padding: 60px 20px;
+  text-align: left;
+}
+.IYoga-section7 h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+.IYoga-section7 h4 {
+  font-size: 1.6em;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+.IYoga-section7 p {
+  font-size: 1.3em;
+  margin-bottom: 40px;
+  color: #555;
+  text-align: center;
+  max-width: 800px;
+}
+/* IYoga-section8 */
+.IYoga-section8 {
+  padding: 60px 20px;
+  text-align: left;
+}
+.IYoga-section8 h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+.IYoga-section8 h4 {
+  font-size: 1.6em;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+.IYoga-section8 p {
+  font-size: 1.3em;
+  margin-bottom: 40px;
+  color: #555;
+  text-align: center;
+  max-width: 800px;
+}
+/* IYoga-section9 */
+.IYoga-section9 {
+  padding: 60px 20px;
+  text-align: left;
+}
+.IYoga-section9 h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+.IYoga-section9 h4 {
+  font-size: 1.6em;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+.IYoga-section9 p {
+  font-size: 1.3em;
+  margin-bottom: 40px;
+  color: #555;
+  text-align: center;
+  max-width: 800px;
+}
+/* Footer */
+footer {
+  background-color: #264653;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;
+  font-size: 1em;
+}
+
+/* Image */
+img {
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+}
+.Logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: auto;
+}
+.IYoga-section img {
+  display: block;
+  float: right;
+  position: absolute;
+  height: 400px;
+  width: 500px;
+  margin: 20px;
+  top: 550px;
+  right: 0;
+}
+.IYoga-section2 img {
+  display: block;
+  float: right;
+  position: absolute;
+  height: 400px;
+  width: 500px;
+  margin: 20px;
+  top: 1300px;
+  right: 0;
+}
+.IYoga-section3 img {
+  display: block;
+  float: right;
+  position: absolute;
+  height: 400px;
+  width: 500px;
+  margin: 20px;
+  top: 2000px;
+  right: 0;
+}
+.IYoga-section4 img {
+  display: block;
+  float: right;
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  margin: 20px;
+  top: 2700px;
+  right: 0;
+}
+.IYoga-section5 img {
+  display: block;
+  float: right;
+  position: absolute;
+  height: 400px;
+  width: 500px;
+  margin: 20px;
+  top: 3400px;
+  right: 0;
+}
+.IYoga-section6 img {
+  display: block;
+  float: right;
+  position: absolute;
+  height: 400px;
+  width: 500px;
+  margin: 20px;
+  top: 4150px;
+  right: 0;
+}
+.IYoga-section7 img {
+  display: block;
+  float: right;
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  margin: 20px;
+  top: 4840px;
+  right: 0;
+}
+.IYoga-section8 img {
+  display: block;
+  float: right;
+  position: absolute;
+  height: 400px;
+  width: 500px;
+  margin: 20px;
+  top: 5700px;
+  right: 0;
+}
+.IYoga-section9 img {
+  display: block;
+  float: right;
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  margin: 20px;
+  top: 6500px;
+  right: 0;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Choose Your Diet Plan</title>
+    <link rel="stylesheet" href="Diet.css" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <h1>Fitness & Diet Planner</h1>
+      <a href="index.html">
+        <img src="/Images/Logo_Final.png" alt="NourishMove Logo" class="Logo" />
+      </a>
+      <nav>
+        <ul>
+          <li><a href="Index.html">Back to Homepage</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="diet-plan-section">
+      <h2>Select Your Diet Preferences</h2>
+      <form id="dietForm">
+        <div class="form-group">
+          <label for="dietType">Preferred Diet Type:</label>
+          <select id="dietType">
+            <option value="vegetarian">Vegetarian</option>
+            <option value="vegan">Vegan</option>
+            <option value="non-vegetarian">Non-Vegetarian</option>
+            <option value="keto">Keto</option>
+            <option value="paleo">Paleo</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="goal">Health Goal:</label>
+          <select id="goal">
+            <option value="weight-loss">Weight Loss</option>
+            <option value="muscle-gain">Muscle Gain</option>
+            <option value="energy-boost">Energy Boost</option>
+            <option value="detox">Detox</option>
+          </select>
+        </div>
+        <button type="button" class="submit-btn" onclick="redirectToPlan()">
+          Get My Plan
+        </button>
+      </form>
+    </div>
+
+    <script>
+      function redirectToPlan() {
+        const dietType = document.getElementById("dietType").value;
+        const goal = document.getElementById("goal").value;
+
+        // Construct a URL based on user selections
+        let url = "";
+
+        if (dietType === "vegetarian" && goal === "weight-loss") {
+          url = "vegetarian-weight-loss.html";
+        } else if (dietType === "vegetarian" && goal === "muscle-gain") {
+          url = "vegetarian-muscle-gain.html";
+        } else if (dietType === "vegetarian" && goal === "energy-boost") {
+          url = "vegetarian-energy-boost.html";
+        } else if (dietType === "vegetarian" && goal === "detox") {
+          url = "vegetarian-detox.html";
+        } else if (dietType === "non-vegetarian" && goal === "weight-loss") {
+          url = "non-vegetarian-weight-loss.html";
+        } else if (dietType === "non-vegetarian" && goal === "muscle-gain") {
+          url = "non-vegetarian-muscle-gain.html";
+        } else if (dietType === "non-vegetarian" && goal === "energy-boost") {
+          url = "non-vegetarian-energy-boost.html";
+        } else if (dietType === "non-vegetarian" && goal === "detox") {
+          url = "non-vegetarian-detox.html";
+        } else if (dietType === "vegan" && goal === "weight-loss") {
+          url = "vegan-weight-loss.html";
+        } else if (dietType === "vegan" && goal === "muscle-gain") {
+          url = "vegan-muscle-gain.html";
+        } else if (dietType === "vegan" && goal === "energy-boost") {
+          url = "vegan-energy-boost.html";
+        } else if (dietType === "vegan" && goal === "detox") {
+          url = "vegan-detox.html";
+        } else if (dietType === "keto" && goal === "weight-loss") {
+          url = "keto-weight-loss.html";
+        } else if (dietType === "keto" && goal === "muscle-gain") {
+          url = "keto-muscle-gain.html";
+        } else if (dietType === "keto" && goal === "energy-boost") {
+          url = "keto-energy-boost.html";
+        } else if (dietType === "keto" && goal === "detox") {
+          url = "keto-detox.html";
+        } else if (dietType === "paleo" && goal === "weight-loss") {
+          url = "paleo-weight-loss.html";
+        } else if (dietType === "paleo" && goal === "muscle-gain") {
+          url = "paleo-muscle-gain.html";
+        } else if (dietType === "paleo" && goal === "energy-boost") {
+          url = "paleo-energy-boost.html";
+        } else if (dietType === "paleo" && goal === "detox") {
+          url = "paleo-detox.html";
+        } else {
+          url = "paleo-detox.html"; // Default page if no match'
+        }
+
+        // Redirect to the constructed URL
+        window.location.href = url;
+      }
+    </script>
+    <footer>
+      <p>&copy; 2024 Fitness & Diet Planner. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
